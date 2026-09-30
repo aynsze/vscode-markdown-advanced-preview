@@ -1,0 +1,24 @@
+{
+    "name": "markdown-advanced-preview",
+    "displayName": "Markdown Advanced Preview",
+    "description": "Advanced Markdown preview with interactive code demos.",
+    "version": "1.0.0",
+    "publisher": "aynsze",
+    "engines": {
+        "vscode": "^1.90.0"
+    },
+    "main": "./extension.js",
+    "activationEvents": [
+        "onLanguage:markdown"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aynsze/vscode-markdown-advanced-preview.git"
+    },
+    "contributes": {
+        "markdown.previewScripts": [
+            "./demo.js",
+            "./copy.js"
+        ]
+    }
+}

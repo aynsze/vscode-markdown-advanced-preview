@@ -1,10 +1,14 @@
 # Markdown Advanced Preview
 
+A VSCode extension that adds table‑copying and demo features to Markdown Preview.
+
 VS Code標準のMarkdown Previewに、表のコピー機能とデモ機能を追加するVSCode拡張機能
 
 - [表のコピー機能](#表のコピー機能)
 - [デモ機能](#デモ機能)
 - [サンプル画像](#サンプル画像)
+- [インストール方法](#インストール方法)
+- [特定のフォルダのみ有効したい場合](#特定のフォルダのみ有効したい場合)
 - [動作確認用markdown](#動作確認用markdown)
 
 ## 表のコピー機能
@@ -109,7 +113,7 @@ HTML・CSS・JavaScriptを組み合わせたデモをMarkdown Preview内に表�
 
   ```css
   div {
-      background: red;
+    background: red;
   }
   ```
 
@@ -147,7 +151,7 @@ HTML・CSS・JavaScriptを組み合わせたデモをMarkdown Preview内に表�
 
   ```css
   input {
-      accent-color: red;
+    accent-color: red;
   }
   ```
 
@@ -156,7 +160,24 @@ HTML・CSS・JavaScriptを組み合わせたデモをMarkdown Preview内に表�
 
 ## サンプル画像
 
-<img width="615" height="742" alt="デモ画像" src="https://github.com/user-attachments/assets/aee05c63-4c1c-4483-a933-4737d83053a4" />
+<img width="615" height="742" alt="サンプル画像" src="https://github.com/user-attachments/assets/aee05c63-4c1c-4483-a933-4737d83053a4" />
+
+## インストール方法
+
+1. GitHubの[Releases](https://github.com/aynsze/vscode-markdown-advanced-preview/releases)を開く
+2. `Assets` から一番上の `markdown-advanced-preview-<バージョン>.vsix` をダウンロード
+3. VSCodeを開いて、拡張機能一覧を開く
+4. 上部にある `...` → `VSIXからのインストール...`を押す
+5. `markdown-advanced-preview-<バージョン>.vsix` を選択
+6. 動作確認
+
+## 特定のフォルダのみ有効したい場合
+
+1.  有効にしたいフォルダを開いたウィンドウで拡張機能ページを開く
+2.  ページ上部のアイコン隣の`無効にする`を押す
+3.  すると、「この拡張機能はユーザーによってグローバルに無効化されています。」が表示される
+4.  `有効にする`のボタンにある`∨`を押す
+5.  `有効にする（ワークスペース）`を押す
 
 ## 動作確認用Markdown
 
@@ -165,8 +186,6 @@ HTML・CSS・JavaScriptを組み合わせたデモをMarkdown Preview内に表�
 
 ````md
 # Markdown Advanced Preview
-
-VS Code標準のMarkdown Previewに、表のコピー機能とデモ機能を追加するVSCode拡張機能
 
 - ### 表のコピー機能
 

@@ -146,21 +146,24 @@ function renderDemo(node) {
 
     const jsCode = codeBlocks.js ?? "";
 
-    const expression = jsCode
-        .trim()
-        .replace(/;\s*$/, "")
-        .trim();
+    const expressionWithoutComment =
+        jsCode
+            .trim()
+            .replace(/\/\/.*$/, "")
+            .trim()
+            .replace(/;\s*$/, "")
+            .trim();
 
     const isSimpleExpression =
-        expression.length > 0 &&
-        !/\r?\n/.test(expression) &&
-        !/[;]/.test(expression) &&
+        expressionWithoutComment.length > 0 &&
+        !/\r?\n/.test(expressionWithoutComment) &&
+        !/[;]/.test(expressionWithoutComment) &&
         !/^(const|let|var|if|for|while|switch|try|throw|function|class|return|import|export)\b/.test(
-            expression
+            expressionWithoutComment
         );
 
     const executableJs = isSimpleExpression
-        ? `window.__demoResult = (${expression});`
+        ? `window.__demoResult = (${expressionWithoutComment});`
         : jsCode;
 
     const iframe = document.createElement("iframe");

@@ -2,7 +2,7 @@
     "name": "markdown-advanced-preview",
     "displayName": "Markdown Advanced Preview",
     "description": "Advanced Markdown preview with interactive code demos.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "publisher": "aynsze",
     "engines": {
         "vscode": "^1.90.0"

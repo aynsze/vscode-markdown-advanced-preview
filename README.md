@@ -160,7 +160,7 @@ HTML・CSS・JavaScriptを組み合わせたデモをMarkdown Preview内に表�
 
 ## サンプル画像
 
-<img width="615" height="742" alt="サンプル画像" src="https://github.com/user-attachments/assets/aee05c63-4c1c-4483-a933-4737d83053a4" />
+![サンプル画像](https://raw.githubusercontent.com/aynsze/Pages/main/assets/vscode-markdown-advanced-preview_sample.png)
 
 ## インストール方法
 

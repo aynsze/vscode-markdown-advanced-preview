@@ -169,6 +169,7 @@ function renderDemo(node) {
     const iframe = document.createElement("iframe");
 
     iframe.style.width = "100%";
+    iframe.style.maxHeight = "300px";
     iframe.style.border = "1px solid #ccc";
     iframe.style.borderRadius = "3px";
 
@@ -223,6 +224,11 @@ function renderDemo(node) {
                     margin: 0;
                 }
 
+                p { 
+                    margin: 0;
+                    padding: 10px 0;
+                }
+                
                 #js-result:empty {
                     display: none;
                 }
@@ -231,19 +237,26 @@ function renderDemo(node) {
                     display: none;
                 }
 
+                body:not(:has(> #js-result:first-child)) #js-console-title {
+                    padding-top: 4px;
+                }
+
                 #js-console-title {
                     border-bottom: 1px solid #ccc;
                     color: #008000;
                     font-family: monospace;
                     padding-bottom: 4px;
+                    background: white;
                 }
 
                 #js-console-output {
                     white-space: pre-wrap;
+                    overflow-wrap: break-word;
                 }
 
                 #js-console-output > div {
                     color: black;
+                    background: white;
                 }
             </style>
         </head>
